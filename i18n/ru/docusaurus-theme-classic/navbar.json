@@ -1,0 +1,14 @@
+{
+  "title": {
+    "message": "Портал инструкций",
+    "description": "The title in the navbar"
+  },
+  "item.label.Документация по продукту": {
+    "message": "Документация по продукту",
+    "description": "Navbar item with label Документация по продукту"
+  },
+  "item.label.Блог": {
+    "message": "Блог",
+    "description": "Navbar item with label Блог"
+  }
+}

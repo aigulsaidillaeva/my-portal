@@ -1,0 +1,10 @@
+{
+  "version.label": {
+    "message": "Next",
+    "description": "The label for version current"
+  },
+  "sidebar.tutorialSidebar.category.Бала бакчага кабыл алуу: Инструкция по регистрации детей в детские сады": {
+    "message": "Бала бакчага кабыл алуу: Инструкция по регистрации детей в детские сады",
+    "description": "The label for category Бала бакчага кабыл алуу: Инструкция по регистрации детей в детские сады in sidebar tutorialSidebar"
+  }
+}
