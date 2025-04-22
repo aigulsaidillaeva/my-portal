@@ -1,0 +1,26 @@
+{
+  "title": {
+    "message": "Нускамалар парталы",
+    "description": "The title in the navbar"
+  },
+  "item.label.Садик": {
+    "message": "Бала бакча",
+    "description": "Navbar item with label Садик"
+  },
+  "item.label.Школа": {
+    "message": "Мектеп",
+    "description": "Navbar item with label Школа"
+  },
+  "item.label.ВУЗ": {
+    "message": "ВУЗ",
+    "description": "Navbar item with label ВУЗ"
+  },
+  "item.label.Другие": {
+    "message": "Другие",
+    "description": "Navbar item with label Другие"
+  },
+  "item.label.Блог": {
+    "message": "Блог",
+    "description": "Navbar item with label Блог"
+  }
+}

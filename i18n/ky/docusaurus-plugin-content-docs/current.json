@@ -1,0 +1,14 @@
+{
+  "version.label": {
+    "message": "Next",
+    "description": "The label for version current"
+  },
+  "sidebar.schoolSidebar.category.1mektep": {
+    "message": "1mektep",
+    "description": "The label for category 1mektep in sidebar schoolSidebar"
+  },
+  "sidebar.schoolSidebar.category.role": {
+    "message": "role",
+    "description": "The label for category role in sidebar schoolSidebar"
+  }
+}

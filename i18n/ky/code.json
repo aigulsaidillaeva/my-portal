@@ -1,0 +1,14 @@
+{
+  "homepage.header.title": {
+    "message": "Билим берүү маалыматтык системалары боюнча нускамалар порталы",
+    "description": "Заголовок на главной странице"
+  },
+  "homepage.header.subtitle": {
+    "message": "Өтө оңой",
+    "description": "Подзаголовок на главной странице"
+  },
+  "homepage.header.button": {
+    "message": "Нускамалар",
+    "description": "Кнопка для перехода к инструкциям"
+  }
+}

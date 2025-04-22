@@ -4,24 +4,35 @@ import useDocusaurusContext from "@docusaurus/useDocusaurusContext";
 import Layout from "@theme/Layout";
 import HomepageFeatures from "@site/src/components/HomepageFeatures";
 import Heading from "@theme/Heading";
+import { translate } from "@docusaurus/Translate"; // ✅ добавлено
 import styles from "./index.module.css";
 
 function HomepageHeader() {
-  const { siteConfig } = useDocusaurusContext();
-
   return (
     <header className={clsx("hero hero--primary", styles.heroBanner)}>
       <div className="container">
         <Heading as="h1" className="hero__title">
-          Портала инструкций по образовательным информационным системам{" "}
+          {translate({
+            id: "homepage.header.title",
+            message:
+              "Портал инструкций по образовательным информационным системам",
+          })}
         </Heading>
-        <p className="hero__subtitle">проще, чем кажется</p>
+        <p className="hero__subtitle">
+          {translate({
+            id: "homepage.header.subtitle",
+            message: "проще, чем кажется",
+          })}
+        </p>
         <div className={styles.buttons}>
           <Link
             className="button button--secondary button--lg"
             to="/docs/mektep"
           >
-            Инструкции
+            {translate({
+              id: "homepage.header.button",
+              message: "Инструкции",
+            })}
           </Link>
         </div>
       </div>
