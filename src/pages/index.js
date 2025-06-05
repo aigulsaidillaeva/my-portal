@@ -1,13 +1,15 @@
+import React, { useEffect } from "react";
 import clsx from "clsx";
 import Link from "@docusaurus/Link";
+import { useHistory } from "@docusaurus/router";
 import useDocusaurusContext from "@docusaurus/useDocusaurusContext";
 import Layout from "@theme/Layout";
 import HomepageFeatures from "@site/src/components/HomepageFeatures";
 import Heading from "@theme/Heading";
-import { translate } from "@docusaurus/Translate"; // ✅ добавлено
+import { translate } from "@docusaurus/Translate";
 import styles from "./index.module.css";
 
-function HomepageHeader() {
+export function HomepageHeader() {
   return (
     <header className={clsx("hero hero--primary", styles.heroBanner)}>
       <div className="container">
@@ -42,6 +44,15 @@ function HomepageHeader() {
 
 export default function Home() {
   const { siteConfig } = useDocusaurusContext();
+  const history = useHistory();
+
+  useEffect(() => {
+    const isAdmin = localStorage.getItem("admin_token");
+    if (isAdmin) {
+      history.push("/admin-dashboard");
+    }
+  }, [history]);
+
   return (
     <Layout
       title={`Hello from ${siteConfig.title}`}

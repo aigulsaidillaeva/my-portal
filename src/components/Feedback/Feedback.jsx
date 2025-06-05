@@ -1,91 +1,47 @@
+// src/pages/feedback.js
 import React, { useState } from "react";
-import styled from "styled-components";
+import axios from "axios";
+import { HomepageHeader } from "../../pages";
 
-// Создаём стилизованные компоненты
-const FeedbackContainer = styled.div`
-  text-align: center;
-  margin-top: 20px;
-`;
+export default function FeedbackPage() {
+  const [question, setQuestion] = useState("");
+  const [submitted, setSubmitted] = useState(false);
 
-const FeedbackButton = styled.button`
-  font-size: 16px;
-  padding: 10px 20px;
-  margin: 5px;
-  cursor: pointer;
-  background-color: #f0f0f0;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-
-  &:hover {
-    background-color: #ddd;
-  }
-`;
-
-const FeedbackStatus = styled.div`
-  margin-top: 10px;
-  font-size: 14px;
-  color: #555;
-`;
-
-const SubmitButton = styled.button`
-  margin-top: 15px;
-  padding: 8px 16px;
-  font-size: 16px;
-  background-color: #007bff;
-  color: white;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-
-  &:hover {
-    background-color: #0056b3;
-  }
-`;
-
-const Feedback = () => {
-  const [feedback, setFeedback] = useState(null);
-  const [isSubmitted, setIsSubmitted] = useState(false);
-
-  const handleFeedback = (value) => {
-    setFeedback(value);
-  };
-
-  const submitFeedback = () => {
-    if (feedback === null) return;
-
-    console.log("Отправлен фидбэк:", feedback);
-
-    // Пример отправки через API
-    // fetch('YOUR_API_URL', {
-    //   method: 'POST',
-    //   body: JSON.stringify({ feedback }),
-    //   headers: {
-    //     'Content-Type': 'application/json',
-    //   },
-    // }).then(response => response.json()).then(data => console.log(data));
-
-    setIsSubmitted(true);
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    await axios.post(`https://a9953b31be7a3b6f.mokky.dev/questions`, {
+      message: question,
+      createdAt: new Date().toISOString(),
+    });
+    setSubmitted(true);
+    setQuestion("");
   };
 
   return (
-    <FeedbackContainer>
-      <h3>Ваш фидбэк</h3>
-      {!isSubmitted ? (
-        <>
-          <FeedbackButton onClick={() => handleFeedback("👍")}>
-            👍 Полезно
-          </FeedbackButton>
-          <FeedbackButton onClick={() => handleFeedback("👎")}>
-            👎 Не полезно
-          </FeedbackButton>
-          {feedback && <FeedbackStatus>Вы выбрали: {feedback}</FeedbackStatus>}
-          <SubmitButton onClick={submitFeedback}>Отправить</SubmitButton>
-        </>
+    <div className="container margin-vert--lg">
+      <HomepageHeader />
+      <h1>Обратная связь</h1>
+      {submitted ? (
+        <p>Спасибо! Ваш вопрос отправлен.</p>
       ) : (
-        <p>Спасибо за ваш фидбэк!</p>
+        <form onSubmit={handleSubmit}>
+          <textarea
+            placeholder="Введите ваш вопрос или отзыв..."
+            value={question}
+            onChange={(e) => setQuestion(e.target.value)}
+            rows={6}
+            style={{ width: "100%", padding: "10px" }}
+            required
+          />
+          <br />
+          <button
+            type="submit"
+            className="button button--primary margin-top--md"
+          >
+            Отправить
+          </button>
+        </form>
       )}
-    </FeedbackContainer>
+    </div>
   );
-};
-
-export default Feedback;
+}

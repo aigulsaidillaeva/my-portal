@@ -8,62 +8,134 @@ import Translate, { translate } from "@docusaurus/Translate";
 const FeatureList = [
   {
     situationText: "идем в ",
-    title: "детский сад",
-    Svg: require("@site/static/img/undraw_docusaurus_tree.svg").default,
-    description: "Информационная система приема детей в детские сады...",
-    link: "/kindergarten",
+    title: "Balalyk",
+    imageUrl: "https://balalyk.edu.gov.kg/accelerator/assets/logo.e89c4357.svg",
+    description: "Национальный образовательный портал.",
+    link: "https://asula.edu.gov.kg/home",
+    external: true,
   },
   {
-    situationText: "зачесляемся ",
-    title: "школу",
-    Svg: require("@site/static/img/undraw_docusaurus_tree.svg").default,
+    situationText: "идем в ",
+    title: "Asula портал",
+    imageUrl: "https://asula.edu.gov.kg/357418f83d487ade6dee.png",
+    description: "Национальный образовательный портал.",
+    link: "https://asula.edu.gov.kg/home",
+    external: true,
+  },
+  {
+    situationText: " зачесляемся ",
+    title: "Школу",
+    imageUrl:
+      "https://1mektep.edu.gov.kg/_next/static/media/logo-second.30c5b046.svg",
     description: "Информационная система приема детей в школы...",
-    link: "/school",
+    link: "https://asula.edu.gov.kg/home",
+    external: true,
   },
   {
     situationText: "идем работать ",
     title: " в систему оброзования",
-    Svg: require("@site/static/img/undraw_docusaurus_react.svg").default,
-    description: "Информационная система «Мугалим»...",
-    link: "/teacher",
+    imageUrl: "https://stem.edu.gov.kg/build/assets/kampa-BrSqPcge.svg",
+    description: "Национальный образовательный портал.",
+    link: "https://asula.edu.gov.kg/home",
+    external: true,
   },
   {
-    situationText: "идем работать ",
-    title: " в систему оброзования",
-    Svg: require("@site/static/img/undraw_docusaurus_react.svg").default,
-    description: "Информационная система «Мугалим»...",
-    link: "/teacher",
+    situationText: "идем в ",
+    title: "Asula портал",
+    imageUrl: "https://2020.edu.gov.kg/img/logo2.png",
+    description: "Национальный образовательный портал.",
+    link: "https://asula.edu.gov.kg/home",
+    external: true,
   },
   {
-    situationText: "идем работать ",
-    title: " в систему оброзования",
-    Svg: require("@site/static/img/undraw_docusaurus_react.svg").default,
-    description: "Информационная система «Мугалим»...",
-    link: "/teacher",
+    situationText: "идем в ",
+    title: "Asula портал",
+    imageUrl: "https://ibilim.edu.gov.kg/images/logo.png",
+    description: "Национальный образовательный портал.",
+    link: "https://asula.edu.gov.kg/home",
+    external: true,
   },
   {
-    situationText: "идем работать ",
-    title: " в систему оброзования",
-    Svg: require("@site/static/img/undraw_docusaurus_react.svg").default,
-    description: "Информационная система «Мугалим»...",
-    link: "/teacher",
+    situationText: "идем в ",
+    title: "Asula портал",
+    imageUrl: "https://ds.edu.gov.kg/img/moe_logo_ru.d854d0ae.svg",
+    description: "Национальный образовательный портал.",
+    link: "https://asula.edu.gov.kg/home",
+    external: true,
   },
+  // {
+  //   situationText: "зачесляемся ",
+  //   title: "школу",
+  //   Svg: require("@site/static/img/undraw_docusaurus_tree.svg").default,
+  //   description: "Информационная система приема детей в школы...",
+  //   link: "/school",
+  // },
+  // {
+  //   situationText: "идем работать ",
+  //   title: " в систему оброзования",
+  //   Svg: require("@site/static/img/undraw_docusaurus_react.svg").default,
+  //   description: "Информационная система «Мугалим»...",
+  //   link: "/teacher",
+  // },
+  // {
+  //   situationText: "идем работать ",
+  //   title: " в систему оброзования",
+  //   Svg: require("@site/static/img/undraw_docusaurus_react.svg").default,
+  //   description: "Информационная система «Мугалим»...",
+  //   link: "/teacher",
+  // },
+  // {
+  //   situationText: "идем работать ",
+  //   title: " в систему оброзования",
+  //   Svg: require("@site/static/img/undraw_docusaurus_react.svg").default,
+  //   description: "Информационная система «Мугалим»...",
+  //   link: "/teacher",
+  // },
+  // {
+  //   situationText: "идем работать ",
+  //   title: " в систему оброзования",
+  //   Svg: require("@site/static/img/undraw_docusaurus_react.svg").default,
+  //   description: "Информационная система «Мугалим»...",
+  //   link: "/teacher",
+  // },
 ];
 
-function Feature({ Svg, title, description, link, situationText }) {
+function Feature({
+  Svg,
+  imageUrl,
+  title,
+  description,
+  link,
+  situationText,
+  external = false,
+}) {
   return (
     <div className={clsx("col col--4")}>
       <div className={styles.card}>
-        <div className="text--center">
-          <Svg className={styles.featureSvg} role="img" />
-        </div>
-        <div className="text--center padding-horiz--md">
-          <p>{situationText}</p>
-          <Heading as="h3">{title}</Heading>
-          <p>{description}</p>
-          <Link to={link}>
-            <Button children="Перейти" />
-          </Link>
+        <div className={styles.cardInner}>
+          <div className={styles.cardIcon}>
+            {Svg ? (
+              <Svg className={styles.featureSvg} role="img" />
+            ) : (
+              <img src={imageUrl} alt={title} className={styles.featureImg} />
+            )}
+          </div>
+          <div className={styles.cardContent}>
+            <p className={styles.situation}>{situationText}</p>
+            <Heading as="h3" className={styles.cardTitle}>
+              {title}
+            </Heading>
+            <p className={styles.cardDescription}>{description}</p>
+            {external ? (
+              <a href={link} target="_blank" rel="noopener noreferrer">
+                <Button className={styles.cardButton}>Перейти</Button>
+              </a>
+            ) : (
+              <Link to={link}>
+                <Button className={styles.cardButton}>Перейти</Button>
+              </Link>
+            )}
+          </div>
         </div>
       </div>
     </div>
