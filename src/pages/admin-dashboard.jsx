@@ -4,101 +4,7 @@ import axios from "axios";
 import Layout from "@theme/Layout";
 import styled from "styled-components";
 
-// Стили
-const Tabs = styled.div`
-  display: flex;
-  margin-top: 2rem;
-  margin-bottom: 1rem;
-`;
 
-const TabButton = styled.button`
-  flex: 1;
-  padding: 0.75rem;
-  background: ${(props) => (props.active ? "#0066ff" : "#f0f0f0")};
-  color: ${(props) => (props.active ? "white" : "black")};
-  border: none;
-  cursor: pointer;
-  font-weight: bold;
-  border-radius: 8px 8px 0 0;
-
-  &:hover {
-    background: ${(props) => (props.active ? "#0052cc" : "#e0e0e0")};
-  }
-`;
-
-const TableWrapper = styled.div`
-  width: 100%; /* Ensure the wrapper takes full width */
-  overflow-x: auto;
-  margin-top: 1rem;
-`;
-
-const StyledTable = styled.table`
-  width: 100%;
-  border-collapse: collapse;
-  background: white;
-  border-radius: 8px;
-  overflow: hidden;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-
-  th,
-  td {
-    padding: 1rem;
-    border-bottom: 1px solid #eee;
-    text-align: left;
-  }
-
-  th {
-    background: #f5f5f5;
-  }
-
-  /* Adjust the column width for "Сообщение" */
-  th:first-child,
-  td:first-child {
-    width: 40%; /* You can adjust the percentage as needed */
-  }
-
-  tr:last-child td {
-    border-bottom: none;
-  }
-`;
-
-const Button = styled.button`
-  margin-right: 0.5rem;
-  margin-top: 0.3rem;
-  background: ${(props) => (props.danger ? "#ff4d4f" : "#0066ff")};
-  color: white;
-  border: none;
-  padding: 0.5rem 0.8rem;
-  border-radius: 6px;
-  cursor: pointer;
-  font-size: 0.9rem;
-
-  &:hover {
-    background: ${(props) => (props.danger ? "#cc0002" : "#0052cc")};
-  }
-`;
-
-const ModalBackground = styled.div`
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.5);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  z-index: 1000;
-`;
-
-const ModalContent = styled.div`
-  background: white;
-  padding: 2rem;
-  border-radius: 12px;
-  text-align: center;
-  max-width: 400px;
-  width: 90%;
-`;
 
 export default function AdminDashboard() {
   const history = useHistory();
@@ -234,7 +140,6 @@ export default function AdminDashboard() {
         </StyledTable>
       </TableWrapper>
 
-      {/* Модалка подтверждения удаления */}
       {deleteId && (
         <ModalBackground>
           <ModalContent>
@@ -252,3 +157,97 @@ export default function AdminDashboard() {
     </Layout>
   );
 }
+const Tabs = styled.div`
+  display: flex;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+`;
+
+const TabButton = styled.button`
+  flex: 1;
+  padding: 0.75rem;
+  background: ${(props) => (props.active ? "#0066ff" : "#f0f0f0")};
+  color: ${(props) => (props.active ? "white" : "black")};
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  border-radius: 8px 8px 0 0;
+
+  &:hover {
+    background: ${(props) => (props.active ? "#0052cc" : "#e0e0e0")};
+  }
+`;
+
+const TableWrapper = styled.div`
+  width: 100%; /* Ensure the wrapper takes full width */
+  overflow-x: auto;
+  margin-top: 1rem;
+`;
+
+const StyledTable = styled.table`
+  width: 100%;
+  border-collapse: collapse;
+  background: white;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+
+  th,
+  td {
+    padding: 1rem;
+    border-bottom: 1px solid #eee;
+    text-align: left;
+  }
+
+  th {
+    background: #f5f5f5;
+  }
+
+  /* Adjust the column width for "Сообщение" */
+  th:first-child,
+  td:first-child {
+    width: 40%; /* You can adjust the percentage as needed */
+  }
+
+  tr:last-child td {
+    border-bottom: none;
+  }
+`;
+
+const Button = styled.button`
+  margin-right: 0.5rem;
+  margin-top: 0.3rem;
+  background: ${(props) => (props.danger ? "#ff4d4f" : "#0066ff")};
+  color: white;
+  border: none;
+  padding: 0.5rem 0.8rem;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 0.9rem;
+
+  &:hover {
+    background: ${(props) => (props.danger ? "#cc0002" : "#0052cc")};
+  }
+`;
+
+const ModalBackground = styled.div`
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+`;
+
+const ModalContent = styled.div`
+  background: white;
+  padding: 2rem;
+  border-radius: 12px;
+  text-align: center;
+  max-width: 400px;
+  width: 90%;
+`;
