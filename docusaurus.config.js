@@ -99,7 +99,7 @@ const config = {
             position: "left",
             label: "Другие",
           },
-          { to: "/blog", label: "Блог", position: "left" },
+          // { to: "/blog", label: "Блог", position: "left" },
           { to: "/feedback", label: "Обратная связь", position: "left" },
           { type: "localeDropdown", position: "right" },
           { type: "search", position: "right" },

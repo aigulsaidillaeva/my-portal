@@ -43,7 +43,7 @@ const Input = styled.input`
 const Button = styled.button`
   width: 100%;
   padding: 10px;
-  background-color: #4caf50;
+  background-color:#5096f1;
   border: none;
   color: white;
   font-size: 16px;
@@ -51,7 +51,7 @@ const Button = styled.button`
   border-radius: 4px;
 
   &:hover {
-    background-color: #45a049;
+    background-color:rgb(44, 163, 231);
   }
 `;
 
