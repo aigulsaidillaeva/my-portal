@@ -7,97 +7,124 @@ import Translate, { translate } from "@docusaurus/Translate";
 
 const FeatureList = [
   {
-    situationText: "идем в ",
-    title: "Balalyk",
+    situationText: translate({
+      id: "feature.situation.balalyk",
+      message: "идем в ",
+    }),
+    title: translate({
+      id: "feature.title.balalyk",
+      message: "Balalyk",
+    }),
     imageUrl: "https://balalyk.edu.gov.kg/accelerator/assets/logo.e89c4357.svg",
-    description: "Национальный образовательный портал.",
+    description: translate({
+      id: "feature.description.balalyk",
+      message: "Национальный образовательный портал.",
+    }),
     link: "https://asula.edu.gov.kg/home",
     external: true,
   },
   {
-    situationText: "идем в ",
-    title: "Asula портал",
+    situationText: translate({
+      id: "feature.situation.asula1",
+      message: "идем в ",
+    }),
+    title: translate({
+      id: "feature.title.asula1",
+      message: "Asula портал",
+    }),
     imageUrl: "https://asula.edu.gov.kg/357418f83d487ade6dee.png",
-    description: "Национальный образовательный портал.",
+    description: translate({
+      id: "feature.description.asula1",
+      message: "Национальный образовательный портал.",
+    }),
     link: "https://asula.edu.gov.kg/home",
     external: true,
   },
   {
-    situationText: " зачесляемся ",
-    title: "Школу",
-    imageUrl:
-      "https://1mektep.edu.gov.kg/_next/static/media/logo-second.30c5b046.svg",
-    description: "Информационная система приема детей в школы...",
+    situationText: translate({
+      id: "feature.situation.school",
+      message: "зачисляемся ",
+    }),
+    title: translate({
+      id: "feature.title.school",
+      message: "Школу",
+    }),
+    imageUrl: "https://1mektep.edu.gov.kg/_next/static/media/logo-second.30c5b046.svg",
+    description: translate({
+      id: "feature.description.school",
+      message: "Информационная система приема детей в школы...",
+    }),
     link: "https://asula.edu.gov.kg/home",
     external: true,
   },
   {
-    situationText: "идем работать ",
-    title: " в систему оброзования",
+    situationText: translate({
+      id: "feature.situation.work",
+      message: "идем работать ",
+    }),
+    title: translate({
+      id: "feature.title.educationSystem",
+      message: "в систему образования",
+    }),
     imageUrl: "https://stem.edu.gov.kg/build/assets/kampa-BrSqPcge.svg",
-    description: "Национальный образовательный портал.",
+    description: translate({
+      id: "feature.description.educationSystem",
+      message: "Национальный образовательный портал.",
+    }),
     link: "https://asula.edu.gov.kg/home",
     external: true,
   },
   {
-    situationText: "идем в ",
-    title: "Asula портал",
+    situationText: translate({
+      id: "feature.situation.asula2",
+      message: "идем в ",
+    }),
+    title: translate({
+      id: "feature.title.asula2",
+      message: "Asula портал",
+    }),
     imageUrl: "https://2020.edu.gov.kg/img/logo2.png",
-    description: "Национальный образовательный портал.",
+    description: translate({
+      id: "feature.description.asula2",
+      message: "Национальный образовательный портал.",
+    }),
     link: "https://asula.edu.gov.kg/home",
     external: true,
   },
   {
-    situationText: "идем в ",
-    title: "Asula портал",
+    situationText: translate({
+      id: "feature.situation.ibilim",
+      message: "идем в ",
+    }),
+    title: translate({
+      id: "feature.title.ibilim",
+      message: "Asula портал",
+    }),
     imageUrl: "https://ibilim.edu.gov.kg/images/logo.png",
-    description: "Национальный образовательный портал.",
+    description: translate({
+      id: "feature.description.ibilim",
+      message: "Национальный образовательный портал.",
+    }),
     link: "https://asula.edu.gov.kg/home",
     external: true,
   },
   {
-    situationText: "идем в ",
-    title: "Asula портал",
+    situationText: translate({
+      id: "feature.situation.ds",
+      message: "идем в ",
+    }),
+    title: translate({
+      id: "feature.title.ds",
+      message: "Asula портал",
+    }),
     imageUrl: "https://ds.edu.gov.kg/img/moe_logo_ru.d854d0ae.svg",
-    description: "Национальный образовательный портал.",
+    description: translate({
+      id: "feature.description.ds",
+      message: "Национальный образовательный портал.",
+    }),
     link: "https://asula.edu.gov.kg/home",
     external: true,
   },
-  // {
-  //   situationText: "зачесляемся ",
-  //   title: "школу",
-  //   Svg: require("@site/static/img/undraw_docusaurus_tree.svg").default,
-  //   description: "Информационная система приема детей в школы...",
-  //   link: "/school",
-  // },
-  // {
-  //   situationText: "идем работать ",
-  //   title: " в систему оброзования",
-  //   Svg: require("@site/static/img/undraw_docusaurus_react.svg").default,
-  //   description: "Информационная система «Мугалим»...",
-  //   link: "/teacher",
-  // },
-  // {
-  //   situationText: "идем работать ",
-  //   title: " в систему оброзования",
-  //   Svg: require("@site/static/img/undraw_docusaurus_react.svg").default,
-  //   description: "Информационная система «Мугалим»...",
-  //   link: "/teacher",
-  // },
-  // {
-  //   situationText: "идем работать ",
-  //   title: " в систему оброзования",
-  //   Svg: require("@site/static/img/undraw_docusaurus_react.svg").default,
-  //   description: "Информационная система «Мугалим»...",
-  //   link: "/teacher",
-  // },
-  // {
-  //   situationText: "идем работать ",
-  //   title: " в систему оброзования",
-  //   Svg: require("@site/static/img/undraw_docusaurus_react.svg").default,
-  //   description: "Информационная система «Мугалим»...",
-  //   link: "/teacher",
-  // },
 ];
 
 function Feature({
@@ -128,11 +155,15 @@ function Feature({
             <p className={styles.cardDescription}>{description}</p>
             {external ? (
               <a href={link} target="_blank" rel="noopener noreferrer">
-                <Button className={styles.cardButton}>Перейти</Button>
+                <Button className={styles.cardButton}>
+                  <Translate id="feature.button">Перейти</Translate>
+                </Button>
               </a>
             ) : (
               <Link to={link}>
-                <Button className={styles.cardButton}>Перейти</Button>
+                <Button className={styles.cardButton}>
+                  <Translate id="feature.button">Перейти</Translate>
+                </Button>
               </Link>
             )}
           </div>
@@ -148,11 +179,15 @@ export default function HomepageFeatures() {
       <div className="container">
         <div className="index_title">
           <p className="index-title__subtitle">
-            Государственные услуги и сервисы
+            <Translate id="homepage.features.subtitle">
+              Государственные услуги и сервисы
+            </Translate>
           </p>
           <h3 className="index-title__title index-title__title_uppercase">
             <div className="index-title__line"></div>
-            для жизненных ситуаций
+            <Translate id="homepage.features.title">
+              для жизненных ситуаций
+            </Translate>
           </h3>
         </div>
         <div className="row">

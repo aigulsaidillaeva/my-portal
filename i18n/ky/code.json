@@ -1,14 +1,390 @@
 {
   "homepage.header.title": {
-    "message": "Билим берүү маалыматтык системалары боюнча нускамалар порталы",
-    "description": "Заголовок на главной странице"
+    "message": "Билим берүү маалыматтык системалары боюнча нускамалар порталы"
   },
   "homepage.header.subtitle": {
-    "message": "Өтө оңой",
-    "description": "Подзаголовок на главной странице"
+    "message": "Өтө оңой"
   },
   "homepage.header.button": {
-    "message": "Нускамалар",
-    "description": "Кнопка для перехода к инструкциям"
+    "message": "Нускамалар"
+  },
+  
+  "theme.ErrorPageContent.title": {
+    "message": "Баракча ката кетирди.",
+    "description": "Баракча кулап кеткенде көрсөтүлгөн аталыш"
+  },
+  "theme.BackToTopButton.buttonAriaLabel": {
+    "message": "Башкы бетке жылдыруу",
+    "description": "Жогоруга кайтуу баскычына ARIA белгиси"
+  },
+  "theme.blog.archive.title": {
+    "message": "Архив",
+    "description": "Блог архив барагынын аталышы жана башкы бөлүгү"
+  },
+  "theme.blog.archive.description": {
+    "message": "Архив",
+    "description": "Блог архив барагынын сүрөттөлүшү"
+  },
+  "theme.blog.paginator.navAriaLabel": {
+    "message": "Блогдордун тизмесиндеги барактар боюнча навигация",
+    "description": "Блогдордун баракчаларын которуу үчүн ARIA белгиси"
+  },
+  "theme.blog.paginator.newerEntries": {
+    "message": "Кийинки жазуулар",
+    "description": "Жаңыраак блог жазууларына которуу баскычы"
+  },
+  "theme.blog.paginator.olderEntries": {
+    "message": "Мурдагы жазуулар",
+    "description": "Эскирээк блог жазууларына которуу баскычы"
+  },
+  "theme.blog.post.paginator.navAriaLabel": {
+    "message": "Блог постторунун барагы боюнча навигация",
+    "description": "Блог постторун которуу үчүн ARIA белгиси"
+  },
+  "theme.blog.post.paginator.newerPost": {
+    "message": "Кийинки пост",
+    "description": "Жаңыраак блог постуна которуу баскычы"
+  },
+  "theme.blog.post.paginator.olderPost": {
+    "message": "Мурдагы пост",
+    "description": "Мурдагы блог постуна которуу баскычы"
+  },
+  "theme.tags.tagsPageLink": {
+    "message": "Бардык тэгдерди көрүү",
+    "description": "Тэгдер тизмесине шилтеме"
+  },
+  "theme.colorToggle.ariaLabel": {
+    "message": "Караңгы жана жарык режимдер арасында которуу (азыркы: {mode})",
+    "description": "Түстү которуу баскычына ARIA белгиси"
+  },
+  "theme.colorToggle.ariaLabel.mode.dark": {
+    "message": "Караңгы режим",
+    "description": "Караңгы түс режими"
+  },
+  "theme.colorToggle.ariaLabel.mode.light": {
+    "message": "Жарык режим",
+    "description": "Жарык түс режими"
+  },
+  "theme.docs.breadcrumbs.navAriaLabel": {
+    "message": "Азыркы баракчанын навигациясы",
+    "description": "Навигация жолуна ARIA белгиси"
+  },
+  "theme.docs.DocCard.categoryDescription.plurals": {
+    "message": "{count} элемент|{count} элемент|{count} элемент",
+    "description": "Категориядагы элементтердин саны тууралуу стандарттык сүрөттөмө"
+  },
+  "theme.docs.paginator.navAriaLabel": {
+    "message": "Документ барагы",
+    "description": "Документтердин баракчаларын которуу үчүн ARIA белгиси"
+  },
+  "theme.docs.paginator.previous": {
+    "message": "Мурдагы баракча",
+    "description": "Мурдагы документке которуу баскычы"
+  },
+  "theme.docs.paginator.next": {
+    "message": "Кийинки баракча",
+    "description": "Кийинки документке которуу баскычы"
+  },
+  "theme.docs.tagDocListPageTitle.nDocsTagged": {
+    "message": "Бир баракча|{count} баракча|{count} баракча",
+    "description": "\"{count} тэг коюлган документтер\" жөнүндө көптүк формасы"
+  },
+  "theme.docs.tagDocListPageTitle": {
+    "message": "\"{tagName}\" тэги менен {nDocsTagged}",
+    "description": "Документтердин тэг барагынын аталышы"
+  },
+  "theme.docs.versionBadge.label": {
+    "message": "Версия: {versionLabel}"
+  },
+  "theme.docs.versions.unreleasedVersionLabel": {
+    "message": "Бул {siteTitle} {versionLabel} версиясынын келечектеги документациясы.",
+    "description": "Басылбаган версия тууралуу билдирүү"
+  },
+  "theme.docs.versions.unmaintainedVersionLabel": {
+    "message": "Бул {siteTitle} {versionLabel} версиясынын колдоосу токтотулган документациясы.",
+    "description": "Колдоосу жок версия тууралуу билдирүү"
+  },
+  "theme.docs.versions.latestVersionSuggestionLabel": {
+    "message": "Акыркы документация {latestVersionLink} ({versionLabel}) барагында.",
+    "description": "Колдонуучуга акыркы версияны карап чыгууну сунуштоо"
+  },
+  "theme.docs.versions.latestVersionLinkLabel": {
+    "message": "акыркы версия",
+    "description": "Акыркы версияга шилтеме"
+  },
+  "theme.common.editThisPage": {
+    "message": "Бул баракты түзөтүү",
+    "description": "Азыркы баракты түзөтүү шилтемеси"
+  },
+  "theme.common.headingLinkTitle": {
+    "message": "{heading} бөлүмүнө түз шилтеме",
+    "description": "Баш бөлүмгө шилтеменин аталышы"
+  },
+  "theme.navbar.mobileVersionsDropdown.label": {
+    "message": "Версиялар",
+    "description": "Мобилдик менюдагы версиялар тизмеси"
+  },
+  "theme.NotFound.title": {
+    "message": "Баракча табылган жок",
+    "description": "404 барагынын аталышы"
+  },
+  "theme.lastUpdated.atDate": {
+    "message": " {date}",
+    "description": "Баракча акыркы жаңыртылган дата"
+  },
+  "theme.lastUpdated.byUser": {
+    "message": " {user} тарабынан",
+    "description": "Баракты ким жаңыртканы"
+  },
+  "theme.lastUpdated.lastUpdatedAtBy": {
+    "message": "Акыркы жаңыртуу {atDate}{byUser}",
+    "description": "Баракчанын акыркы жаңыртылганы жана ким тарабынан"
+  },
+  "theme.tags.tagsListLabel": {
+    "message": "Тэгдер:",
+    "description": "Тэгдер тизмесинин белгиси"
+  },
+  "theme.admonition.caution": {
+    "message": "эскертүү",
+    "description": "Caution түрүндөгү эскертме"
+  },
+  "theme.admonition.danger": {
+    "message": "эңиртүү",
+    "description": "Danger түрүндөгү эскертме"
+  },
+  "theme.admonition.info": {
+    "message": "маалымат",
+    "description": "Info түрүндөгү эскертме"
+  },
+  "theme.admonition.note": {
+    "message": "эскертүү",
+    "description": "Note түрүндөгү эскертме"
+  },
+  "theme.admonition.tip": {
+    "message": "кеңеш",
+    "description": "Tip түрүндөгү эскертме"
+  },
+  "theme.admonition.warning": {
+    "message": "эскертүү",
+    "description": "Warning түрүндөгү эскертме"
+  },
+  "theme.AnnouncementBar.closeButtonAriaLabel": {
+    "message": "Жабуу",
+    "description": "Жакшы кабар баскычына ARIA белгиси"
+  },
+  "theme.blog.sidebar.navAriaLabel": {
+    "message": "Блогдогу акыркы жазуулар боюнча навигация",
+    "description": "Блогдун соңку посттору үчүн ARIA белгиси"
+  },
+  "theme.CodeBlock.copied": {
+    "message": "Көчүрүлдү",
+    "description": "Код блоктордон көчүрүү баскычынын тексти"
+  },
+  "theme.CodeBlock.copyButtonAriaLabel": {
+    "message": "Буферге көчүрүү",
+    "description": "Код көчүрүү баскычына ARIA белгиси"
+  },
+  "theme.CodeBlock.copy": {
+    "message": "Көчүрүү",
+    "description": "Көчүрүү баскычынын тексти"
+  },
+  "theme.CodeBlock.wordWrapToggle": {
+    "message": "Сөздөрдү автоматтык түрдө кийинки сапка которуу",
+    "description": "Код блокунда сапты автоматтык түрдө буруу баскычынын аталышы"
+  },
+  "theme.DocSidebarItem.expandCategoryAriaLabel": {
+    "message": "'{label}' категориясын кеңейтүү",
+    "description": "Категорияны кеңейтүү үчүн ARIA белгиси"
+  },
+  "theme.DocSidebarItem.collapseCategoryAriaLabel": {
+    "message": "'{label}' категориясын кыскартуу",
+    "description": "Категорияны кыскартуу үчүн ARIA белгиси"
+  },
+  "theme.navbar.mobileLanguageDropdown.label": {
+    "message": "Тилдер",
+    "description": "Мобилдик тил тандоочу менюнун аталышы"
+  },
+  "theme.NavBar.navAriaLabel": {
+    "message": "Башкы меню",
+    "description": "Негизги навигация үчүн ARIA белгиси"
+  },
+  "theme.NotFound.p1": {
+    "message": "Кечиресиз, сиз издеп жаткан баракча табылган жок.",
+    "description": "404 барагынын биринчи абзацы"
+  },
+  "theme.NotFound.p2": {
+    "message": "Сураныч, ушул шилтемеге алып келген сайттын ээси менен байланышып, шилтеменин иштебей жатканын билдирип коюңуз.",
+    "description": "404 барагынын экинчи абзацы"
+  },
+  "theme.TOCCollapsible.toggleButtonLabel": {
+    "message": "Бул барактын мазмуну",
+    "description": "Жылдырма мазмун баскычынын белгиси"
+  },
+  "theme.blog.post.readMore": {
+    "message": "Дагы окуу",
+    "description": "Блог постунан толук макалага шилтеме"
+  },
+  "theme.blog.post.readMoreLabel": {
+    "message": "{title} жөнүндө көбүрөөк",
+    "description": "Толук блог постуна ARIA белгиси"
+  },
+  "theme.blog.post.readingTime.plurals": {
+    "message": "{readingTime} мин. окуу|{readingTime} мин. окуу|{readingTime} мин. окуу",
+    "description": "\"{readingTime} мин. окуу\" көптүк формасы"
+  },
+  "theme.docs.breadcrumbs.home": {
+    "message": "Башкы баракча",
+    "description": "Башкы беттин навигациядагы ARIA белгиси"
+  },
+  "theme.docs.sidebar.collapseButtonTitle": {
+    "message": "Сайдбарды кыскартуу",
+    "description": "Документ сайдбарын кыскартуу баскычынын аталышы"
+  },
+  "theme.docs.sidebar.collapseButtonAriaLabel": {
+    "message": "Сайдбарды кыскартуу",
+    "description": "Документ сайдбарын кыскартуу баскычынын ARIA белгиси"
+  },
+  "theme.docs.sidebar.navAriaLabel": {
+    "message": "Документ сайдбары",
+    "description": "Сайдбардагы навигация үчүн ARIA белгиси"
+  },
+  "theme.docs.sidebar.closeSidebarButtonAriaLabel": {
+    "message": "Навигация панели жабуу",
+    "description": "Мобилдик сайдбарды жабуу үчүн ARIA белгиси"
+  },
+  "theme.docs.sidebar.toggleSidebarButtonAriaLabel": {
+    "message": "Навигация панелин ачуу/жабуу",
+    "description": "Мобилдик менюдагы гамбургер баскычына ARIA белгиси"
+  },
+  "theme.navbar.mobileSidebarSecondaryMenu.backButtonLabel": {
+    "message": "← Башкы менюга кайтуу",
+    "description": "Мобилдик сайдбардагы артка кайтуу баскычы"
+  },
+  "theme.docs.sidebar.expandButtonTitle": {
+    "message": "Сайдбарды кеңейтүү",
+    "description": "Документ сайдбарын кеңейтүү баскычынын аталышы"
+  },
+  "theme.docs.sidebar.expandButtonAriaLabel": {
+    "message": "Сайдбарды кеңейтүү",
+    "description": "Документ сайдбарын кеңейтүү баскычынын ARIA белгиси"
+  },
+  "cmfcmf/d-s-l.searchBar.placeholder": {
+    "message": "Издөө...",
+    "description": "Издөө тилкесиндеги орун басар тексти"
+  },
+  "cmfcmf/d-s-l.searchBar.clearButtonTitle": {
+    "message": "Тазалоо",
+    "description": "Издөөнү тазалоо баскычынын аталышы"
+  },
+  "cmfcmf/d-s-l.searchBar.detachedCancelButtonText": {
+    "message": "Жокко чыгаруу",
+    "description": "Ачык издөө терезесин жабуу баскычынын тексти"
+  },
+  "cmfcmf/d-s-l.searchBar.submitButtonTitle": {
+    "message": "Издөө",
+    "description": "Издөө баскычынын аталышы"
+  },
+  "cmfcmf/d-s-l.searchBar.noResults": {
+    "message": "Натыйжалар табылган жок.",
+    "description": "Натыйжа жок учурда көрсөтүлүүчү билдирүү"
+  },
+  "theme.blog.post.plurals": {
+    "message": "{count} жазуу|{count} жазуу|{count} жазуу",
+    "description": "\"{count} жазуулар\" көптүк формасы"
+  },
+  "theme.blog.tagTitle": {
+    "message": "\"{tagName}\" тэги менен {nPosts}",
+    "description": "Блог тэгинин барагынын аталышы"
+  },
+  "theme.blog.author.pageTitle": {
+    "message": "{authorName} - {nPosts}",
+    "description": "Автордун барагынын аталышы"
+  },
+  "theme.blog.authorsList.pageTitle": {
+    "message": "Авторлор",
+    "description": "Авторлор тизмесинин аталышы"
+  },
+  "theme.blog.authorsList.viewAll": {
+    "message": "Бардык авторлорду көрүү",
+    "description": "Авторлор барагына шилтеме"
+  },
+  "theme.blog.author.noPosts": {
+    "message": "Бул автордун"},
+  "feature.situation.balalyk": {
+    "message": "баратабыз "
+  },
+  "feature.title.balalyk": {
+    "message": "Balalyk"
+  },
+  "feature.description.balalyk": {
+    "message": "Улуттук билим берүү порталы."
+  },
+  "feature.situation.asula1": {
+    "message": "баратабыз "
+  },
+  "feature.title.asula1": {
+    "message": "Asula порталы"
+  },
+  "feature.description.asula1": {
+    "message": "Улуттук билим берүү порталы."
+  },
+  "feature.situation.school": {
+    "message": "катталабыз "
+  },
+  "feature.title.school": {
+    "message": "Мектепке"
+  },
+  "feature.description.school": {
+    "message": "Балдарды мектептерге кабыл алуу маалымат системасы..."
+  },
+  "feature.situation.work": {
+    "message": "иштөөгө барабыз "
+  },
+  "feature.title.educationSystem": {
+    "message": "Билим берүү системасына"
+  },
+  "feature.description.educationSystem": {
+    "message": "Улуттук билим берүү порталы."
+  },
+  "feature.situation.asula2": {
+    "message": "баратабыз "
+  },
+  "feature.title.asula2": {
+    "message": "Asula порталы"
+  },
+  "feature.description.asula2": {
+    "message": "Улуттук билим берүү порталы."
+  },
+  "feature.situation.ibilim": {
+    "message": "баратабыз "
+  },
+  "feature.title.ibilim": {
+    "message": "Asula порталы"
+  },
+  "feature.description.ibilim": {
+    "message": "Улуттук билим берүү порталы."
+  },
+  "feature.situation.ds": {
+    "message": "баратабыз "
+  },
+  "feature.title.ds": {
+    "message": "Asula порталы"
+  },
+  "feature.description.ds": {
+    "message": "Улуттук билим берүү порталы."
+  },
+  "feature.button": {
+    "message": "Өтүү"
+  },
+  "homepage.features.subtitle": {
+    "message": "Мамлекеттик кызматтар жана сервистер"
+  },
+  "homepage.features.title": {
+    "message": "Өмүрлүк кырдаалдар үчүн"
   }
+
+
+
+ 
+
 }

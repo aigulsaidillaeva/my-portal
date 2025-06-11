@@ -1,18 +1,26 @@
 {
   "link.title.Министерство образования и науки КР": {
-    "message": "Министерство образования и науки КР",
+    "message": "КР Билим берүү жана илим министрлиги",
     "description": "The title of the footer links column with title=Министерство образования и науки КР in the footer"
   },
   "link.title.Домашняя страница": {
-    "message": "Домашняя страница",
+    "message": "Башкы бет",
     "description": "The title of the footer links column with title=Домашняя страница in the footer"
   },
+  "link.title.Вход для администратора": {
+    "message": "Администратор кирүүсү",
+    "description": "The title of the footer links column with title=Вход для администратора in the footer"
+  },
   "link.title.Разработано государственным учреждением «Центр цифрового образования» при Министерстве образования КР © Все права защищены": {
-    "message": "Разработано государственным учреждением «Центр цифрового образования» при Министерстве образования КР © Все права защищены",
+    "message": "КР Билим берүү министрлигинин алдындагы «Санариптик билим берүү борбору» тарабынан иштелип чыккан © Бардык укуктар корголгон",
     "description": "The title of the footer links column with title=Разработано государственным учреждением «Центр цифрового образования» при Министерстве образования КР © Все права защищены in the footer"
   },
+  "link.item.label.Войти как админ": {
+    "message": "Админ катары кирүү",
+    "description": "The label of footer link with label=Войти как админ linking to /login"
+  },
   "copyright": {
-    "message": "Copyright © 2025 My Project, Inc. Built with Docusaurus.",
+    "message": "КР Билим берүү министрлигинин алдындагы «Санариптик билим берүү борбору» 2025.",
     "description": "The footer copyright"
   }
 }

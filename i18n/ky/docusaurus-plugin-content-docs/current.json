@@ -3,12 +3,56 @@
     "message": "Next",
     "description": "The label for version current"
   },
-  "sidebar.schoolSidebar.category.1mektep": {
-    "message": "1mektep",
-    "description": "The label for category 1mektep in sidebar schoolSidebar"
+  "sidebar.kindergartenSidebar.category.Балалык": {
+    "message": "Балалык",
+    "description": "The label for category Балалык in sidebar kindergartenSidebar"
   },
-  "sidebar.schoolSidebar.category.role": {
-    "message": "role",
-    "description": "The label for category role in sidebar schoolSidebar"
+  "sidebar.kindergartenSidebar.category.Кто я": {
+    "message": "Кто я",
+    "description": "The label for category Кто я in sidebar kindergartenSidebar"
+  },
+  "sidebar.kindergartenSidebar.category.МОН": {
+    "message": "МОН",
+    "description": "The label for category МОН in sidebar kindergartenSidebar"
+  },
+  "sidebar.kindergartenSidebar.category.Организация": {
+    "message": "Организация",
+    "description": "The label for category Организация in sidebar kindergartenSidebar"
+  },
+  "sidebar.kindergartenSidebar.category.Ваучер": {
+    "message": "Ваучер",
+    "description": "The label for category Ваучер in sidebar kindergartenSidebar"
+  },
+  "sidebar.schoolSidebar.category.🏫Мектеп": {
+    "message": "🏫Мектеп",
+    "description": "The label for category 🏫Мектеп in sidebar schoolSidebar"
+  },
+  "sidebar.schoolSidebar.category.Кто я?": {
+    "message": "Кто я?",
+    "description": "The label for category Кто я? in sidebar schoolSidebar"
+  },
+  "sidebar.vuzSidebar.category.Портал для приема в вузы КР граждан зарубежных стран": {
+    "message": "Портал для приема в вузы КР граждан зарубежных стран",
+    "description": "The label for category Портал для приема в вузы КР граждан зарубежных стран in sidebar vuzSidebar"
+  },
+  "sidebar.vuzSidebar.category.Прием в профессиональные лицеи": {
+    "message": "Прием в профессиональные лицеи",
+    "description": "The label for category Прием в профессиональные лицеи in sidebar vuzSidebar"
+  },
+  "sidebar.vuzSidebar.category.Прием в СПУЗ": {
+    "message": "Прием в СПУЗ",
+    "description": "The label for category Прием в СПУЗ in sidebar vuzSidebar"
+  },
+  "sidebar.vuzSidebar.category.Студент": {
+    "message": "Студент",
+    "description": "The label for category Студент in sidebar vuzSidebar"
+  },
+  "sidebar.vuzSidebar.category.Прием в ВУЗ": {
+    "message": "Прием в ВУЗ",
+    "description": "The label for category Прием в ВУЗ in sidebar vuzSidebar"
+  },
+  "sidebar.vuzSidebar.category.Диплом": {
+    "message": "Диплом",
+    "description": "The label for category Диплом in sidebar vuzSidebar"
   }
 }

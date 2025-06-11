@@ -1,6 +1,6 @@
 {
   "title": {
-    "message": "Нускамалар парталы",
+    "message": "Нускамалар порталы",
     "description": "The title in the navbar"
   },
   "item.label.Садик": {
@@ -12,15 +12,15 @@
     "description": "Navbar item with label Школа"
   },
   "item.label.ВУЗ": {
-    "message": "ВУЗ",
+    "message": "ЖОЖ",
     "description": "Navbar item with label ВУЗ"
   },
   "item.label.Другие": {
-    "message": "Другие",
+    "message": "Башка",
     "description": "Navbar item with label Другие"
   },
-  "item.label.Блог": {
-    "message": "Блог",
-    "description": "Navbar item with label Блог"
+  "item.label.Обратная связь": {
+    "message": "Кайтарым байланыш",
+    "description": "Navbar item with label Обратная связь"
   }
 }
