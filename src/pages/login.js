@@ -68,11 +68,10 @@ export default function LoginPage() {
   const [error, setError] = useState("");
   const history = useHistory();
 
-  // Проверка наличия токена при монтировании компонента
   useEffect(() => {
     const token = localStorage.getItem("admin_token");
     if (token) {
-      history.push("/admin-dashboard"); // Если токен найден, перенаправляем на админ-панель
+      history.push("/admin-dashboard"); 
     }
   }, [history]);
 
@@ -81,7 +80,7 @@ export default function LoginPage() {
 
     if (username === "admin" && password === "admin123") {
       localStorage.setItem("admin_token", "valid_token");
-      history.push("/admin-dashboard"); // Перенаправляем на админ-панель после успешного логина
+      history.push("/admin-dashboard"); 
     } else {
       setError("Неверный логин или пароль");
     }
@@ -92,7 +91,7 @@ export default function LoginPage() {
       <LoginForm onSubmit={handleLogin}>
         <Title>Вход в админ-панель</Title>
 
-        {/* Поле для логина */}
+     
         <Input
           type="text"
           placeholder="Введите логин"
@@ -101,7 +100,7 @@ export default function LoginPage() {
           required
         />
 
-        {/* Поле для пароля */}
+       
         <Input
           type="password"
           placeholder="Введите пароль"

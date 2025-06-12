@@ -18,9 +18,10 @@ const FeatureList = [
     imageUrl: "https://balalyk.edu.gov.kg/accelerator/assets/logo.e89c4357.svg",
     description: translate({
       id: "feature.description.balalyk",
-      message: "Национальный образовательный портал.",
+      message: ".",
     }),
-    link: "https://asula.edu.gov.kg/home",
+    link: "/docs/kindergarten/balalyk/",
+    // link: "https://asula.edu.gov.kg/home",
     external: true,
   },
   {
@@ -37,7 +38,7 @@ const FeatureList = [
       id: "feature.description.asula1",
       message: "Национальный образовательный портал.",
     }),
-    link: "https://asula.edu.gov.kg/home",
+    link: "/docs/other/license/",
     external: true,
   },
   {
@@ -54,7 +55,7 @@ const FeatureList = [
       id: "feature.description.school",
       message: "Информационная система приема детей в школы...",
     }),
-    link: "https://asula.edu.gov.kg/home",
+    link: "/docs/school/1mektep/about/",
     external: true,
   },
   {
