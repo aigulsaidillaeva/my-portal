@@ -6,7 +6,7 @@ export default function Logout() {
   useEffect(() => {
     // Очистка токена при выходе
     localStorage.removeItem("admin_token");
-    window.location.href = "/"; // Перенаправление на главную страницу после выхода
+    window.location.href = "/"; 
   }, []);
 
   return (

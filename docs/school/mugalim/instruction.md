@@ -1,21 +1,21 @@
 ---
-id: mugalim
+id: instruction
 title: mugalim
-sidebar_label: Мугалим 
+sidebar_label: Как использовать? 
 ---
 
 
 
 
 
-#  Мугалим
+#  Инструкция по использованию системы «Мугалим»
 
 ## 🎥 Видео-инструкция
 
 <iframe 
   width="560" 
   height="315" 
-  src="https://www.youtube.com/embed/qoxaflcCa7M?si=c8RP_QP1Dcpbb1RP" 
+  src="https://www.youtube.com/embed/wNNPurFT7eo?si=kLlgMq1-UDcnxCOf" 
   title="YouTube video player" 
   frameborder="0" 
   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
