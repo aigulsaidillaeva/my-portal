@@ -13,7 +13,7 @@ const config = {
   favicon: "img/favicon.ico",
 
   url: "https://bilim.gov.kg",
-  baseUrl: "/",
+  baseUrl: "/doc",
 
   organizationName: "ГУ ЦЦО",
   projectName: "Документация",
