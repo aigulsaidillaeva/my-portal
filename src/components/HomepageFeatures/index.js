@@ -20,7 +20,7 @@ const FeatureList = [
       id: "feature.description.balalyk",
       message: ".",
     }),
-    link: "/docs/kindergarten/balalyk/",
+    link: "/doc/docs/kindergarten/balalyk/",
     // link: "https://asula.edu.gov.kg/home",
     external: true,
   },
