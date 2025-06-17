@@ -13,15 +13,14 @@ const FeatureList = [
     }),
     title: translate({
       id: "feature.title.balalyk",
-      message: "Balalyk",
+      message: "Балалык",
     }),
     imageUrl: "https://balalyk.edu.gov.kg/accelerator/assets/logo.e89c4357.svg",
     description: translate({
       id: "feature.description.balalyk",
-      message: ".",
+      message: "Реестр дошкольных образовательных организаций",
     }),
-    link: "/doc/docs/kindergarten/balalyk/",
-    // link: "https://asula.edu.gov.kg/home",
+    link: "/doc/docs/kindergarten/about/",
     external: true,
   },
   {
@@ -31,14 +30,14 @@ const FeatureList = [
     }),
     title: translate({
       id: "feature.title.asula1",
-      message: "Asula портал",
+      message: "АСУЛА",
     }),
     imageUrl: "https://asula.edu.gov.kg/357418f83d487ade6dee.png",
     description: translate({
       id: "feature.description.asula1",
-      message: "Национальный образовательный портал.",
+      message: "Автоматизированная система управления лицензированием и аккредитацией образовательных организаций Кыргызской Республики.",
     }),
-    link: "/docs/other/license/",
+    link: "/doc/docs/other/asula/",
     external: true,
   },
   {
@@ -48,31 +47,47 @@ const FeatureList = [
     }),
     title: translate({
       id: "feature.title.school",
-      message: "Школу",
+      message: "Мекеп",
     }),
     imageUrl: "https://1mektep.edu.gov.kg/_next/static/media/logo-second.30c5b046.svg",
     description: translate({
       id: "feature.description.school",
-      message: "Информационная система приема детей в школы...",
+      message: "Информационная система для зачисления детей в школы Кыргызской Республики. ",
     }),
     link: "/docs/school/1mektep/about/",
+    external: true,
+  },  {
+    situationText: translate({
+      id: "feature.situation.work",
+      message: " ",
+    }),
+    title: translate({
+      id: "feature.title.educationSystem",
+      message: "Мугалим",
+    }),
+    imageUrl: "https://stem.edu.gov.kg/build/assets/kampa-BrSqPcge.svg",
+    description: translate({
+      id: "feature.description.educationSystem",
+      message: "Национальный резерв учителей",
+    }),
+    link: "/doc/docs/school/mugalim/",
     external: true,
   },
   {
     situationText: translate({
       id: "feature.situation.work",
-      message: "идем работать ",
+      message: " ",
     }),
     title: translate({
       id: "feature.title.educationSystem",
-      message: "в систему образования",
+      message: "Саанарип кампа",
     }),
     imageUrl: "https://stem.edu.gov.kg/build/assets/kampa-BrSqPcge.svg",
     description: translate({
       id: "feature.description.educationSystem",
-      message: "Национальный образовательный портал.",
+      message: "Цифровая образовательная платформа",
     }),
-    link: "https://asula.edu.gov.kg/home",
+    link: "/doc/docs",
     external: true,
   },
   {
@@ -82,14 +97,14 @@ const FeatureList = [
     }),
     title: translate({
       id: "feature.title.asula2",
-      message: "Asula портал",
+      message: "ВУЗ",
     }),
     imageUrl: "https://2020.edu.gov.kg/img/logo2.png",
     description: translate({
       id: "feature.description.asula2",
       message: "Национальный образовательный портал.",
     }),
-    link: "https://asula.edu.gov.kg/home",
+    link: "/doc/docs",
     external: true,
   },
   {
@@ -106,7 +121,7 @@ const FeatureList = [
       id: "feature.description.ibilim",
       message: "Национальный образовательный портал.",
     }),
-    link: "https://asula.edu.gov.kg/home",
+    link: "/doc/docs",
     external: true,
   },
   {
@@ -123,7 +138,7 @@ const FeatureList = [
       id: "feature.description.ds",
       message: "Национальный образовательный портал.",
     }),
-    link: "https://asula.edu.gov.kg/home",
+    link: "/doc/docs",
     external: true,
   },
 ];
