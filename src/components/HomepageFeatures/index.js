@@ -6,6 +6,7 @@ import Button from "../Button/Button";
 import Translate, { translate } from "@docusaurus/Translate";
 
 const FeatureList = [
+//БАЛАЛЫК
   {
     situationText: translate({
       id: "feature.situation.balalyk",
@@ -15,31 +16,35 @@ const FeatureList = [
       id: "feature.title.balalyk",
       message: "Балалык",
     }),
+
     imageUrl: "https://balalyk.edu.gov.kg/accelerator/assets/logo.e89c4357.svg",
     description: translate({
       id: "feature.description.balalyk",
       message: "Реестр дошкольных образовательных организаций",
     }),
-    link: "/doc/docs/kindergarten/about/",
+    link: "/doc/docs/kindergarten/balalyk/",
     external: true,
   },
+  //ВАУЧЕР
   {
     situationText: translate({
-      id: "feature.situation.asula1",
-      message: "идем в ",
+      id: "feature.situation.balalyk",
+      message: "получить  ",
     }),
     title: translate({
-      id: "feature.title.asula1",
-      message: "АСУЛА",
+      id: "feature.title.balalyk",
+      message: "Ваучер",
     }),
-    imageUrl: "https://asula.edu.gov.kg/357418f83d487ade6dee.png",
+    imageUrl: "https://balalyk.edu.gov.kg/accelerator/assets/logo.e89c4357.svg",
     description: translate({
-      id: "feature.description.asula1",
-      message: "Автоматизированная система управления лицензированием и аккредитацией образовательных организаций Кыргызской Республики.",
+      id: "feature.description.balalyk",
+      message: "Реестр дошкольных образовательных организаций",
     }),
-    link: "/doc/docs/other/asula/",
+    link: "/doc/docs/kindergarten/voucher",
     external: true,
   },
+ 
+    //МЕКТЕП
   {
     situationText: translate({
       id: "feature.situation.school",
@@ -56,7 +61,27 @@ const FeatureList = [
     }),
     link: "/docs/school/1mektep/about/",
     external: true,
-  },  {
+  }, 
+  //Аттестат
+  {
+    situationText: translate({
+      id: "feature.situation.school",
+      message: "Найти  ",
+    }),
+    title: translate({
+      id: "feature.title.school",
+      message: "Күбөлүк",
+    }),
+    imageUrl: "https://1mektep.edu.gov.kg/_next/static/media/logo-second.30c5b046.svg",
+    description: translate({
+      id: "feature.description.school",
+      message: "Реестр аттестатов и свидетельств ",
+    }),
+    link: "/doc/docs/school/attestat/",
+    external: true,
+  }, 
+    //МУГАЛИМ
+ {
     situationText: translate({
       id: "feature.situation.work",
       message: " ",
@@ -73,23 +98,8 @@ const FeatureList = [
     link: "/doc/docs/school/mugalim/",
     external: true,
   },
-  {
-    situationText: translate({
-      id: "feature.situation.work",
-      message: " ",
-    }),
-    title: translate({
-      id: "feature.title.educationSystem",
-      message: "Саанарип кампа",
-    }),
-    imageUrl: "https://stem.edu.gov.kg/build/assets/kampa-BrSqPcge.svg",
-    description: translate({
-      id: "feature.description.educationSystem",
-      message: "Цифровая образовательная платформа",
-    }),
-    link: "/doc/docs",
-    external: true,
-  },
+   
+   //ВУЗ
   {
     situationText: translate({
       id: "feature.situation.asula2",
@@ -102,43 +112,100 @@ const FeatureList = [
     imageUrl: "https://2020.edu.gov.kg/img/logo2.png",
     description: translate({
       id: "feature.description.asula2",
-      message: "Национальный образовательный портал.",
+      message: "Информационная система “Абитуриент онлайн - ВУЗ” предназначена для тех, кто желает обучаться в высших образовательных организациях Кыргызской Республики .",
     }),
-    link: "/doc/docs",
+    link: "/doc/docs/vuz/abiturient-vuz/",
     external: true,
   },
+   //СПУЗ
+  {
+    situationText: translate({
+      id: "feature.situation.asula2",
+      message: "Колледж ",
+    }),
+    title: translate({
+      id: "feature.title.asula2",
+      message: "Прием в СПУЗ",
+    }),
+    imageUrl: "https://2020.edu.gov.kg/img/logo2.png",
+    description: translate({
+      id: "feature.description.asula2",
+      message: "Информационная система “Абитуриент онлайн - СПУЗ”",
+    }),
+    link: "/doc/docs/vuz/abiturient-spuz/",
+    external: true,
+  },
+     //Диплом
+  {
+    situationText: translate({
+      id: "feature.situation.asula2",
+      message: "Колледж ",
+    }),
+    title: translate({
+      id: "feature.title.asula2",
+      message: "Прием в СПУЗ",
+    }),
+    imageUrl: "https://2020.edu.gov.kg/img/logo2.png",
+    description: translate({
+      id: "feature.description.asula2",
+      message: "Информационная система “Абитуриент онлайн - СПУЗ”",
+    }),
+    link: "/doc/docs/vuz/diplom/",
+    external: true,
+  },
+   //АСУЛА
+  {
+    situationText: translate({
+      id: "feature.situation.asula1",
+      message: " ",
+    }),
+    title: translate({
+      id: "feature.title.asula1",
+      message: "АСУЛА",
+    }),
+    imageUrl: "https://asula.edu.gov.kg/357418f83d487ade6dee.png",
+    description: translate({
+      id: "feature.description.asula1",
+      message: "Автоматизированная система управления лицензированием и аккредитацией образовательных организаций Кыргызской Республики.",
+    }),
+    link: "/doc/docs/other/asula/",
+    external: true,
+  },
+  //Мир знаний
   {
     situationText: translate({
       id: "feature.situation.ibilim",
-      message: "идем в ",
+      message: " ",
     }),
     title: translate({
       id: "feature.title.ibilim",
-      message: "Asula портал",
+      message: "Мир знаний",
     }),
     imageUrl: "https://ibilim.edu.gov.kg/images/logo.png",
     description: translate({
       id: "feature.description.ibilim",
-      message: "Национальный образовательный портал.",
+      message: "Образовательная платформа для учеников начальных классов",
     }),
-    link: "/doc/docs",
+    link: "https://ibilim.edu.gov.kg/",
     external: true,
   },
+    //
+
   {
-    situationText: translate({
+    situationText: translate({ 
       id: "feature.situation.ds",
-      message: "идем в ",
+      message: " ",
     }),
     title: translate({
       id: "feature.title.ds",
-      message: "Asula портал",
+      message: "Э-дневник",
     }),
     imageUrl: "https://ds.edu.gov.kg/img/moe_logo_ru.d854d0ae.svg",
     description: translate({
       id: "feature.description.ds",
-      message: "Национальный образовательный портал.",
+      message: "Электронный дневник для школьников",
     }),
-    link: "/doc/docs",
+    link: "https://kundoluk.edu.gov.kg/account/login",
     external: true,
   },
 ];
