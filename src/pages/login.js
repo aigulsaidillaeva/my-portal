@@ -2,6 +2,66 @@ import React, { useState, useEffect } from "react";
 import { useHistory } from "@docusaurus/router";
 import styled from "styled-components";
 
+
+
+export default function LoginPage() {
+  const [username, setUsername] = useState("");
+  const [password, setPassword] = useState("");
+  const [error, setError] = useState("");
+  const history = useHistory();
+const BASE = "/doc";
+const goTo = (path) => `${BASE}${path}`;
+
+  useEffect(() => {
+    const token = localStorage.getItem("admin_token");
+    if (token) {
+   history.push(goTo("/admin-dashboard"));
+
+    }
+  }, [history]);
+
+  const handleLogin = (e) => {
+    e.preventDefault();
+
+    if (username === "admin" && password === "admin123") {
+      localStorage.setItem("admin_token", "valid_token");
+    history.push(goTo("/admin-dashboard"));
+
+    } else {
+      setError("Неверный логин или пароль");
+    }
+  };
+
+  return (
+    <LoginContainer>
+      <LoginForm onSubmit={handleLogin}>
+        <Title>Вход в админ-панель</Title>
+
+     
+        <Input
+          type="text"
+          placeholder="Введите логин"
+          value={username}
+          onChange={(e) => setUsername(e.target.value)}
+          required
+        />
+
+       
+        <Input
+          type="password"
+          placeholder="Введите пароль"
+          value={password}
+          onChange={(e) => setPassword(e.target.value)}
+          required
+        />
+
+        <Button type="submit">Войти</Button>
+        {error && <ErrorMessage>{error}</ErrorMessage>}
+      </LoginForm>
+    </LoginContainer>
+  );
+}
+
 // Стили для контейнера
 const LoginContainer = styled.div`
   display: flex;
@@ -61,57 +121,3 @@ const ErrorMessage = styled.div`
   font-size: 14px;
   margin-top: 10px;
 `;
-
-export default function LoginPage() {
-  const [username, setUsername] = useState("");
-  const [password, setPassword] = useState("");
-  const [error, setError] = useState("");
-  const history = useHistory();
-
-  useEffect(() => {
-    const token = localStorage.getItem("admin_token");
-    if (token) {
-      history.push("/admin-dashboard"); 
-    }
-  }, [history]);
-
-  const handleLogin = (e) => {
-    e.preventDefault();
-
-    if (username === "admin" && password === "admin123") {
-      localStorage.setItem("admin_token", "valid_token");
-      history.push("/admin-dashboard"); 
-    } else {
-      setError("Неверный логин или пароль");
-    }
-  };
-
-  return (
-    <LoginContainer>
-      <LoginForm onSubmit={handleLogin}>
-        <Title>Вход в админ-панель</Title>
-
-     
-        <Input
-          type="text"
-          placeholder="Введите логин"
-          value={username}
-          onChange={(e) => setUsername(e.target.value)}
-          required
-        />
-
-       
-        <Input
-          type="password"
-          placeholder="Введите пароль"
-          value={password}
-          onChange={(e) => setPassword(e.target.value)}
-          required
-        />
-
-        <Button type="submit">Войти</Button>
-        {error && <ErrorMessage>{error}</ErrorMessage>}
-      </LoginForm>
-    </LoginContainer>
-  );
-}
