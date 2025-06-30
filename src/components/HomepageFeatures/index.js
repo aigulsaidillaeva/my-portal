@@ -17,7 +17,7 @@ const FeatureList = [
       message: "Балалык",
     }),
 
-    imageUrl: "https://balalyk.edu.gov.kg/accelerator/assets/logo.e89c4357.svg",
+    imageUrl:  '/doc/img/logos/bal.svg',
     description: translate({
       id: "feature.description.balalyk",
       message: "Реестр дошкольных образовательных организаций",
@@ -35,7 +35,7 @@ const FeatureList = [
       id: "feature.title.balalyk",
       message: "Ваучер",
     }),
-    imageUrl: "https://balalyk.edu.gov.kg/accelerator/assets/logo.e89c4357.svg",
+    imageUrl:  '/doc/img/logos/balalyk.svg',
     description: translate({
       id: "feature.description.balalyk",
       message: "Реестр дошкольных образовательных организаций",
@@ -54,7 +54,7 @@ const FeatureList = [
       id: "feature.title.school",
       message: "Мекеп",
     }),
-    imageUrl: "https://1mektep.edu.gov.kg/_next/static/media/logo-second.30c5b046.svg",
+    imageUrl:  '/doc/img/logos/mektep.svg',
     description: translate({
       id: "feature.description.school",
       message: "Информационная система для зачисления детей в школы Кыргызской Республики. ",
@@ -72,7 +72,7 @@ const FeatureList = [
       id: "feature.title.school",
       message: "Күбөлүк",
     }),
-    imageUrl: "https://1mektep.edu.gov.kg/_next/static/media/logo-second.30c5b046.svg",
+    imageUrl:  '/doc/img/logos/kuboluk.svg',
     description: translate({
       id: "feature.description.school",
       message: "Реестр аттестатов и свидетельств ",
@@ -90,7 +90,8 @@ const FeatureList = [
       id: "feature.title.educationSystem",
       message: "Мугалим",
     }),
-    imageUrl: "https://stem.edu.gov.kg/build/assets/kampa-BrSqPcge.svg",
+    imageUrl:  '/doc/img/logos/mugalim.svg',
+
     description: translate({
       id: "feature.description.educationSystem",
       message: "Национальный резерв учителей",
@@ -109,7 +110,7 @@ const FeatureList = [
       id: "feature.title.asula2",
       message: "ВУЗ",
     }),
-    imageUrl: "https://2020.edu.gov.kg/img/logo2.png",
+    imageUrl:  '/doc/img/logos/vuz.svg',
     description: translate({
       id: "feature.description.asula2",
       message: "Информационная система “Абитуриент онлайн - ВУЗ” предназначена для тех, кто желает обучаться в высших образовательных организациях Кыргызской Республики .",
@@ -127,7 +128,7 @@ const FeatureList = [
       id: "feature.title.asula2",
       message: "Прием в СПУЗ",
     }),
-    imageUrl: "https://2020.edu.gov.kg/img/logo2.png",
+    imageUrl:  '/doc/img/logos/spuz.svg',
     description: translate({
       id: "feature.description.asula2",
       message: "Информационная система “Абитуриент онлайн - СПУЗ”",
@@ -139,13 +140,13 @@ const FeatureList = [
   {
     situationText: translate({
       id: "feature.situation.asula2",
-      message: "Колледж ",
+      message: "Диплом ",
     }),
     title: translate({
       id: "feature.title.asula2",
-      message: "Прием в СПУЗ",
+      message: "Реестр дипломов",
     }),
-    imageUrl: "https://2020.edu.gov.kg/img/logo2.png",
+    imageUrl:  '/doc/img/logos/diplom.svg',
     description: translate({
       id: "feature.description.asula2",
       message: "Информационная система “Абитуриент онлайн - СПУЗ”",
@@ -163,7 +164,7 @@ const FeatureList = [
       id: "feature.title.asula1",
       message: "АСУЛА",
     }),
-    imageUrl: "https://asula.edu.gov.kg/357418f83d487ade6dee.png",
+    imageUrl:  '/doc/img/logos/asula.svg',
     description: translate({
       id: "feature.description.asula1",
       message: "Автоматизированная система управления лицензированием и аккредитацией образовательных организаций Кыргызской Республики.",
@@ -200,7 +201,7 @@ const FeatureList = [
       id: "feature.title.ds",
       message: "Э-дневник",
     }),
-    imageUrl: "https://ds.edu.gov.kg/img/moe_logo_ru.d854d0ae.svg",
+    imageUrl:  '/doc/img/logos/eKundoluk.png',
     description: translate({
       id: "feature.description.ds",
       message: "Электронный дневник для школьников",
