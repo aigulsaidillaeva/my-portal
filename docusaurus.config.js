@@ -100,7 +100,6 @@ const config = {
             label: "Другие",
           },
           // { to: "/blog", label: "Блог", position: "left" },
-          { to: "/feedback", label: "Обратная связь", position: "left" },
           { type: "localeDropdown", position: "right" },
           { type: "search", position: "right" },
         ],
@@ -117,15 +116,7 @@ const config = {
             title: "Домашняя страница",
             items: [],
           },
-          {
-            title: "Вход для администратора",
-            items: [
-              {
-                label: "Войти как админ",
-                to: "/login",
-              },
-            ],
-          },
+         
           {
             title:
               "Разработано государственным учреждением «Центр цифрового образования» при Министерстве образования КР © Все права защищены",
