@@ -17,7 +17,7 @@ const FeatureList = [
       message: "Балалык",
     }),
 
-    imageUrl:  '/doc/img/logos/bal.svg',
+    imageUrl:  '/doc/img/logos/balalyk.svg',
     description: translate({
       id: "feature.description.balalyk",
       message: "Реестр дошкольных образовательных организаций",
@@ -190,7 +190,7 @@ const FeatureList = [
     link: "https://ibilim.edu.gov.kg/",
     external: true,
   },
-    //
+    //E-kundoluk
 
   {
     situationText: translate({ 
@@ -201,7 +201,7 @@ const FeatureList = [
       id: "feature.title.ds",
       message: "Э-дневник",
     }),
-    imageUrl:  '/doc/img/logos/eKundoluk.png',
+    imageUrl:  '/doc/img/logos/eKundoluk.svg',
     description: translate({
       id: "feature.description.ds",
       message: "Электронный дневник для школьников",
