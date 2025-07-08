@@ -28,7 +28,7 @@ export function HomepageHeader() {
           })}
         </p>
         <div className={styles.buttons}>
-          <Link
+          {/* <Link
             className="button button--secondary button--lg"
             to="/docs/school/1mektep/"
           >
@@ -36,7 +36,7 @@ export function HomepageHeader() {
               id: "homepage.header.button",
               message: "Инструкции",
             })}
-          </Link>
+          </Link> */}
         </div>
       </div>
     </header>

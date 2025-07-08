@@ -311,13 +311,13 @@
   "theme.blog.author.noPosts": {
     "message": "Бул автордун"},
   "feature.situation.balalyk": {
-    "message": "баратабыз "
+    "message": "барабыз "
   },
   "feature.title.balalyk": {
-    "message": "Balalyk"
+    "message": "Балалык"
   },
   "feature.description.balalyk": {
-    "message": "Улуттук билим берүү порталы."
+    "message": "Лицензиялоо жана аккредитациялоо системасы."
   },
   "feature.situation.asula1": {
     "message": "баратабыз "
@@ -346,26 +346,8 @@
   "feature.description.educationSystem": {
     "message": "Улуттук билим берүү порталы."
   },
-  "feature.situation.asula2": {
-    "message": "баратабыз "
-  },
-  "feature.title.asula2": {
-    "message": "Asula порталы"
-  },
-  "feature.description.asula2": {
-    "message": "Улуттук билим берүү порталы."
-  },
-  "feature.situation.ibilim": {
-    "message": "баратабыз "
-  },
-  "feature.title.ibilim": {
-    "message": "Asula порталы"
-  },
-  "feature.description.ibilim": {
-    "message": "Улуттук билим берүү порталы."
-  },
   "feature.situation.ds": {
-    "message": "баратабыз "
+    "message": "барабыз "
   },
   "feature.title.ds": {
     "message": "Asula порталы"
@@ -381,10 +363,66 @@
   },
   "homepage.features.title": {
     "message": "Өмүрлүк кырдаалдар үчүн"
+  },
+
+
+
+  "feature.title.ibilim": {
+    "message": "Билим дүйнөсү"
+  },
+  "feature.description.ibilim": {
+    "message": "Башталгыч класстардын окуучулары үчүн билим берүүчү платформа."
+  },
+  
+  "feature.title.kuboluk": {
+    "message": "Күбөлүк"
+  },
+  "feature.description.kuboluk": {
+    "message": "Аттестаттардын жана күбөлүктөрдүн реестри."
+  },
+   "feature.title.mugalim": {
+    "message": "Мугалим"
+  },
+  "feature.description.mugalim": {
+    "message": "Мугалимдердин улуттук резерви."
+  },
+ "feature.title.vuz": {
+    "message": "ЖОЖ"
+  },
+  "feature.description.vuz": {
+    "message": "ЖОЖго кабыл алуу."
+  },
+  "feature.title.spuz": {
+    "message": "Колледж"
+  },
+  "feature.description.spuz": {
+    "message": "КООЖго кабыл алуу."
+  },
+  "feature.title.doplom": {
+    "message": "Диплом"
+  },
+  "feature.description.doplom": {
+    "message": "Дипломдор реестри."
+  },
+    "feature.title.voucher": {
+    "message": "Ваучер"
+  },
+  "feature.situation.voucher": {
+    "message": "алуу"
+  },
+   "feature.description.voucher": {
+    "message": "Мамлекет тарабынан берилген каржылык жардам, бала бакчанын чыгымдарын жабууга жардам берет."
+  },
+  "feature.title.vuzVoucher": {
+    "message": "ЖОЖ Ваучер"
+  },
+  "feature.situation.vuzVoucher": {
+    "message": "алуу"
+  },
+   "feature.description.vuzVoucher": {
+    "message": "Педагогикалык адистиктер боюнча окутууну каржылоонун ваучердик системасы"
   }
 
 
-
- 
 
 }

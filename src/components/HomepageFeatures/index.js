@@ -6,6 +6,25 @@ import Button from "../Button/Button";
 import Translate, { translate } from "@docusaurus/Translate";
 
 const FeatureList = [
+  //ВУЗ ВАУЧЕР
+  {
+    situationText: translate({
+      id: "feature.situation.vuzVoucher",
+      message: "получить ",
+    }),
+    title: translate({
+      id: "feature.title.vuzVoucher",
+      message: "ВУЗ Ваучер",
+    }),
+
+     imageUrl:  '/doc/img/logos/vuz.svg',
+    description: translate({
+      id: "feature.description.vuzVoucher",
+      message: "Ваучерная система финансирования на обучение по педагогическим специальностям",
+    }),
+    link: "/doc/docs/vuz/abiturient-vuz/voucher-info/",
+    external: true,
+  },
 //БАЛАЛЫК
   {
     situationText: translate({
@@ -28,19 +47,19 @@ const FeatureList = [
   //ВАУЧЕР
   {
     situationText: translate({
-      id: "feature.situation.balalyk",
+      id: "feature.situation.voucher",
       message: "получить  ",
     }),
     title: translate({
-      id: "feature.title.balalyk",
+      id: "feature.title.voucher",
       message: "Ваучер",
     }),
     imageUrl:  '/doc/img/logos/balalyk.svg',
     description: translate({
-      id: "feature.description.balalyk",
-      message: "Реестр дошкольных образовательных организаций",
+      id: "feature.description.voucher",
+      message: "Финансовая поддержка от государства для оплаты услуг дошкольного образования. Помогает родителям покрыть расходы на детский сад.",
     }),
-    link: "/doc/docs/kindergarten/voucher",
+    link: "/doc/docs/kindergarten/voucher/",
     external: true,
   },
  
@@ -65,16 +84,16 @@ const FeatureList = [
   //Аттестат
   {
     situationText: translate({
-      id: "feature.situation.school",
-      message: "Найти  ",
+      id: "feature.situation.kuboluk",
+      message: "  ",
     }),
     title: translate({
-      id: "feature.title.school",
+      id: "feature.title.kuboluk",
       message: "Күбөлүк",
     }),
     imageUrl:  '/doc/img/logos/kuboluk.svg',
     description: translate({
-      id: "feature.description.school",
+      id: "feature.description.kuboluk",
       message: "Реестр аттестатов и свидетельств ",
     }),
     link: "/doc/docs/school/attestat/",
@@ -83,17 +102,17 @@ const FeatureList = [
     //МУГАЛИМ
  {
     situationText: translate({
-      id: "feature.situation.work",
+      id: "feature.situation.mugalim",
       message: " ",
     }),
     title: translate({
-      id: "feature.title.educationSystem",
+      id: "feature.title.mugalim",
       message: "Мугалим",
     }),
     imageUrl:  '/doc/img/logos/mugalim.svg',
 
     description: translate({
-      id: "feature.description.educationSystem",
+      id: "feature.description.mugalim",
       message: "Национальный резерв учителей",
     }),
     link: "/doc/docs/school/mugalim/",
@@ -103,16 +122,16 @@ const FeatureList = [
    //ВУЗ
   {
     situationText: translate({
-      id: "feature.situation.asula2",
-      message: "идем в ",
+      id: "feature.situation.vuz",
+      message: "",
     }),
     title: translate({
-      id: "feature.title.asula2",
+      id: "feature.title.vuz",
       message: "ВУЗ",
     }),
     imageUrl:  '/doc/img/logos/vuz.svg',
     description: translate({
-      id: "feature.description.asula2",
+      id: "feature.description.vuz",
       message: "Информационная система “Абитуриент онлайн - ВУЗ” предназначена для тех, кто желает обучаться в высших образовательных организациях Кыргызской Республики .",
     }),
     link: "/doc/docs/vuz/abiturient-vuz/",
@@ -121,16 +140,16 @@ const FeatureList = [
    //СПУЗ
   {
     situationText: translate({
-      id: "feature.situation.asula2",
+      id: "feature.situation.spuz",
       message: "Колледж ",
     }),
     title: translate({
-      id: "feature.title.asula2",
+      id: "feature.title.spuz",
       message: "Прием в СПУЗ",
     }),
     imageUrl:  '/doc/img/logos/spuz.svg',
     description: translate({
-      id: "feature.description.asula2",
+      id: "feature.description.spuz",
       message: "Информационная система “Абитуриент онлайн - СПУЗ”",
     }),
     link: "/doc/docs/vuz/abiturient-spuz/",
@@ -139,25 +158,25 @@ const FeatureList = [
      //Диплом
   {
     situationText: translate({
-      id: "feature.situation.asula2",
-      message: "Диплом ",
+      id: "feature.situation.diplom",
+      message: " ",
     }),
     title: translate({
-      id: "feature.title.asula2",
-      message: "Реестр дипломов",
+      id: "feature.title.diplom",
+      message: "Диплом",
     }),
     imageUrl:  '/doc/img/logos/diplom.svg',
     description: translate({
-      id: "feature.description.asula2",
-      message: "Информационная система “Абитуриент онлайн - СПУЗ”",
+      id: "feature.description.diplom",
+      message: " Реестр дипломов",
     }),
     link: "/doc/docs/vuz/diplom/",
     external: true,
   },
-   //АСУЛА
+  // АСУЛА
   {
     situationText: translate({
-      id: "feature.situation.asula1",
+      id: "feature.situation.asula",
       message: " ",
     }),
     title: translate({
@@ -190,25 +209,7 @@ const FeatureList = [
     link: "https://ibilim.edu.gov.kg/",
     external: true,
   },
-    //E-kundoluk
-
-  {
-    situationText: translate({ 
-      id: "feature.situation.ds",
-      message: " ",
-    }),
-    title: translate({
-      id: "feature.title.ds",
-      message: "Э-дневник",
-    }),
-    imageUrl:  '/doc/img/logos/eKundoluk.svg',
-    description: translate({
-      id: "feature.description.ds",
-      message: "Электронный дневник для школьников",
-    }),
-    link: "https://kundoluk.edu.gov.kg/account/login",
-    external: true,
-  },
+   
 ];
 
 function Feature({
