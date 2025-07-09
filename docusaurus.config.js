@@ -10,7 +10,7 @@ import { themes as prismThemes } from "prism-react-renderer";
 const config = {
   title: "Документация",
   tagline: "Документация МОН КР",
-  favicon: "img/favicon.ico",
+  favicon: "img/logo.svg",
 
   url: "https://bilim.gov.kg",
   baseUrl: "/doc",
@@ -37,7 +37,7 @@ const config = {
       ({
         docs: {
           sidebarPath: "./sidebars.js",
-          editUrl: "https://github.com/aigulsaidillaeva/my-portal/edit/main/",
+          // editUrl: "https://github.com/aigulsaidillaeva/my-portal/edit/main/",
         },
         blog: {
           showReadingTime: true,

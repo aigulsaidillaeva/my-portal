@@ -29,6 +29,25 @@
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
 }
 
-.navbar__search {
-  display: none !important;
+/* Для того чтобы переключатель языка был виден на мобильных устройствах */
+/* Показывать переключатель языка даже на мобильных устройствах */
+
+
+/* .navbar__item.dropdown--hoverable.dropdown--right {
+  display: block !important;
 }
+
+@media (max-width: 896px) {
+  .navbar__item--locale-dropdown {
+    display: block !important;
+    position: absolute;
+    left: 20px;
+    right: auto;
+    top: 10px;
+    z-index: 1001;
+    background: white;
+    border-radius: 4px;
+    padding: 5px;
+      
+  }
+} */
