@@ -222,7 +222,7 @@ function Feature({
   external = false,
 }) {
   return (
-    <div className={clsx("col col--4")}>
+    <div className={styles.cardContainer}>
       <div className={styles.card}>
         <div className={styles.cardInner}>
           <div className={styles.cardIcon}>
