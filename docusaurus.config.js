@@ -74,6 +74,10 @@ const config = {
       image: "img/docusaurus-social-card.jpg",
       navbar: {
         title: "Портал инструкций",
+        logo: {
+    alt: "Логотип МОН КР",
+    src: "img/logo.svg", // путь к файлу в папке static
+  },
         items: [
           {
             type: "docSidebar",
